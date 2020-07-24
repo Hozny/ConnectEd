@@ -4,23 +4,16 @@ import React from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
-//import { createStackNavigator } from 'react-navigation-stack';
+import { createStackNavigator } from 'react-navigation-stack';
 
-export default function AuthHomeScreen(props) {
-    let email = 'Please enter your student email';
-    let password = '';
-    return (
-        <AppNavigator />
-    );
-}
 
-const AppSwitchNavigator = createSwitchNavigator({
+
+export const AuthNavigator = createStackNavigator({
     ChoiceScreen: ChoiceScreen,
     SignInScreen: SignInScreen, 
     SignUpScreen: SignUpScreen 
 });
  
-const AppNavigator = createAppContainer(AppSwitchNavigator);
 function ChoiceScreen(props) {
     let email = 'Please enter your student email';
     let password = '';
