@@ -19,7 +19,7 @@ function ChoiceScreen(props) {
     let password = '';
     return (
         <View style={styles.container}>
-            <Text>Login Screen</Text>
+            <Text>Welcome ConnectEd Screen</Text>
                 <Button title="Sign in" onPress={bool => 
                     {if(bool) props.navigation.navigate('SignInScreen')}} />
                 <Button title="Sign up" onPress={bool => 
@@ -52,7 +52,7 @@ function SignInScreen(props) {
                     secureTextEntry={true} style={styles.TextInput} 
                     onChangeText = {text => {email = text} }/>
                     <Button title="Don't have an account? Sign up" 
-                        onPress={() => props.navigation.navigate('LogInScreen')}/>
+                        onPress={bool => {if(bool)props.navigation.navigate('SignUpScreen')}}/>
             <StatusBar style="auto" />
         </View>
     );
