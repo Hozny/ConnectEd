@@ -1,20 +1,11 @@
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
-export default function LoginScreen(props) {
-    let email = 'Please enter your student email';
-    let password = '';
-    return (
-        <View style={styles.container}>
-            <Text>Login Screen</Text>
-            <Button title="Sign in" onPress={props.navigation.navigate('SignInScreen')}/>
-            <Button title="Sign up"/>
-        </View>
-    );
-}
-function LoginInput() { 
+
+export default function SignInScreen() { 
     return (
         <View style={styles.container}>
                 <TextInput placeholder="Please enter your student email"

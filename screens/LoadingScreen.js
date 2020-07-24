@@ -14,7 +14,7 @@ export default function LoadingScreen(props) {
           if (user) { 
               props.navigation.navigate('DashboardScreen');
           } else { 
-              props.navigation.navigate('LoginScreen');
+              props.navigation.navigate('AuthHomeScreen');
           }
       });
     };
