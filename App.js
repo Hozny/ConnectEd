@@ -5,14 +5,14 @@ import { StyleSheet, Text, View } from 'react-native';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
 import LoadingScreen from './screens/LoadingScreen';
-import LoginScreen from './screens/LoginScreen';
+import AuthHomeScreen from './screens/AuthHomeScreen';
 import DashboardScreen from './screens/DashboardScreen';
-import SignInScreen from './screens/SignInScreen';
 
 import firebase from 'firebase';
 import firebaseConfig from './config'; 
 
 firebase.initializeApp(firebaseConfig);
+
 export default function App() {
   return (
       <AppNavigator />
@@ -22,9 +22,8 @@ export default function App() {
 
 const AppSwitchNavigator = createSwitchNavigator({
     LoadingScreen: LoadingScreen, 
-    LoginScreen: LoginScreen, 
+    AuthHomeScreen: AuthHomeScreen, 
     DashboardScreen: DashboardScreen, 
-    SignInScreen: SignInScreen
 });
  
 const AppNavigator = createAppContainer(AppSwitchNavigator);
