@@ -12,6 +12,7 @@ import firebase from 'firebase';
 import firebaseConfig from './config'; 
 
 firebase.initializeApp(firebaseConfig);
+firebase.auth().signOut().then(() => console.log('signed out'));
 
 export default function App() {
   return (
