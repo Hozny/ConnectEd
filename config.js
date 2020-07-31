@@ -1,10 +1,10 @@
 export default firebaseConfig = {
-        apiKey: "AIzaSyC_HH1-uiR-qBsTZPdYGcl7veR8UfyBXgo",
-        authDomain: "connected2-8c07a.firebaseapp.com",
-        databaseURL: "https://connected2-8c07a.firebaseio.com",
-        projectId: "connected2-8c07a",
-        storageBucket: "connected2-8c07a.appspot.com",
-        messagingSenderId: "1087402882748",
-        appId: "1:1087402882748:web:8e9967a23b12ce74fec2b9",
-        measurementId: "G-QX9X1LDFWS"
+  apiKey: "AIzaSyAnk1s2Mj9oSNMyn3YSwCxph0IeXj0ZQUE",
+  authDomain: "connected-5b4b5.firebaseapp.com",
+  databaseURL: "https://connected-5b4b5.firebaseio.com",
+  projectId: "connected-5b4b5",
+  storageBucket: "connected-5b4b5.appspot.com",
+  messagingSenderId: "783291125047",
+  appId: "1:783291125047:web:34ac1a98797c0492d59eb2",
+  measurementId: "G-VYTHJ23P75",
 };
