@@ -4,10 +4,11 @@ import React from "react";
 import { StyleSheet, ScrollView, Text, Image, View, Button } from "react-native";
 
 export default function MatchesScreen() {
+  let profile = basicProfile
   return (
     <View style={styles.container}>
       <SlidingProfilesView />
-      <ProfileView profile={basicProfile} />
+      <ProfileView profile={profile} />
     </View>
   );
 }
@@ -18,15 +19,15 @@ const basicProfile = {
     degree: "Actuarial Science", 
     university: "University of Waterloo 2024", 
     interests: [["apples", "red"], ["oranges", "orange"], ["bananas", "yellow"], ["kiwis", "green"]]
-
 } 
 
 function SlidingProfilesView() { 
     return (
-        <View style={{width: "100%", alignItems: "center"}}>
+        <View style={{width: "100%", justifyContent: "center", alignItems: "center"}}>
             
             <Text>Matches</Text>
-            <ScrollView horizontal={true}> 
+            <ScrollView horizontal={true} contentContainerStyle={{flexGrow: 1}} > 
+                <SmallProfileIcon profile = {basicProfile}/>
                 <SmallProfileIcon profile = {basicProfile}/>
                 <SmallProfileIcon profile = {basicProfile}/>
                 <SmallProfileIcon profile = {basicProfile}/>
